@@ -1,107 +1,149 @@
-<!DOCTYPE html>
-<html>
-<body>
-
-<h1>BoomTrader</h1>
-<!-- wp:image {"id":36,"sizeSlug":"large"} -->
-<figure class="wp-block-image size-large"><img src="https://boomtrader.info/wp-content/uploads/2020/08/1.png" alt="" class="wp-image-36"/><figcaption>SETTINGS</figcaption></figure>
-<!-- /wp:image -->
-
-<!-- wp:heading -->
-<h2>This tab contains the direct settings of the trading robot.</h2>
+{:en}<!-- wp:heading -->
+<h2>CREATE THE APIKEY AND SECRETKEY KEYS</h2>
 <!-- /wp:heading -->
 
 <!-- wp:quote -->
-<blockquote class="wp-block-quote"><p>In the upper basket are all available instruments in the futures section, in the lower only those that will participate in trading in this particular bot. The fields below indicate how many items will be in each bucket, by default 4×4. (closed for editing)</p></blockquote>
+<blockquote class="wp-block-quote"><p>DOWNLOAD THE LATEST VERSION OF BOOM_TRADER FROM THE <a href="tg://resolve?domain=boomtraderchat">TELEGRAM</a> CHANNEL.</p></blockquote>
 <!-- /wp:quote -->
 
 <!-- wp:paragraph -->
-<p>1. «Position volume (in USDT)» by default, 50% of the volume is overwritten when connecting to the exchange. (closed for editing)</p>
+<p>MUST BE INSTALLED. <a href="https://dotnet.microsoft.com/download/dotnet-core/current/runtime">NET Core 3.1 runtime</a></p>
 <!-- /wp:paragraph -->
 
 <!-- wp:paragraph -->
-<p>2. «Enter when there is a discrepancy, %» specify the difference between the baskets when the trading robot will enter the transaction</p>
+<p>1. Create a folder on the desktop "TRADING ROBOT-1" (the folder name can be any ), unpack the archive to the created folder.</p>
 <!-- /wp:paragraph -->
 
 <!-- wp:paragraph -->
-<p>3. «Closed in profit, %» profit setting at which positions are closed</p>
+<p>2. Go to the "TRADING ROBOT-1" folder and run the file "BoomTrader_2.exe»</p>
 <!-- /wp:paragraph -->
 
 <!-- wp:paragraph -->
-<p>4. «Exchange leverage»</p>
+<p>3. In the "connections" section. enter the received key in the "license key" field, in the API key and Sekret API fields, the received keys on binance, and click the "connect" button . the "logs" window will display a message about successful license verification.</p>
 <!-- /wp:paragraph -->
 
 <!-- wp:paragraph -->
-<p>5. «Buy in addition,%» Indicate the step of additional purchase</p>
+<p>4. Close, open trading robot.</p>
 <!-- /wp:paragraph -->
 
 <!-- wp:paragraph -->
-<p>6. «Number of purchases» we set the number of additional transactions, if the discrepancy still increases — thanks to this, it is possible to increase profits (additional purchases are made in both directions, when bot in — additional purchases average the position, when bot in + additional purchases increase the volume of positions)</p>
+<p>5. Create on the desktop another 2 folders "TRADING ROBOT-2", "TRADING ROBOT-3". Copy all files from the folder "TRADING ROBOT 1" in the folder "TRADING ROBOT-2", "TRADING ROBOT-3".</p>
 <!-- /wp:paragraph -->
 
-<!-- wp:paragraph -->
-<p>7. «Stop loss, $» If you want to work with stop loss, check the box and enter the size in% in the field.</p>
-<!-- /wp:paragraph -->
+<!-- wp:quote -->
+<blockquote class="wp-block-quote"><p>Launch all 3 versions of the trading robot, and connect to the exchange.</p></blockquote>
+<!-- /wp:quote -->
 
-<!-- wp:paragraph -->
-<p>8. «Trailings» is activated upon reaching «Close on profit», by default 10%. (closed for editing)</p>
-<!-- /wp:paragraph -->
-
-<!-- wp:paragraph -->
-<p>START launches a trading robot (you must first specify the settings in the «Settings» block).</p>
-<!-- /wp:paragraph -->
-
-<!-- wp:paragraph -->
-<p>To stop a trading robot, press the STOP button.</p>
-<!-- /wp:paragraph -->
-
-<!-- wp:paragraph -->
-<p>RESET serves to reset the coefficients.</p>
-<!-- /wp:paragraph -->
-
-<!-- wp:paragraph -->
-<p>CLOSE closes all open positions.</p>
-<!-- /wp:paragraph -->
-
-<!-- wp:image {"id":42,"sizeSlug":"large"} -->
-<figure class="wp-block-image size-large"><img src="https://boomtrader.info/wp-content/uploads/2020/08/2.png" alt="" class="wp-image-42"/><figcaption>INFO</figcaption></figure>
+<!-- wp:image {"id":52,"sizeSlug":"large"} -->
+<figure class="wp-block-image size-large"><img src="/img/4.png" alt="" class="wp-image-52"/></figure>
 <!-- /wp:image -->
 
 <!-- wp:paragraph -->
-<p>This tab displays the results of calculations and the status of the trading account. As well as the event log</p>
+<p>When selecting contracts consider:</p>
 <!-- /wp:paragraph -->
 
 <!-- wp:paragraph -->
-<p>Spread————————Разброс между корзинами<br>Averaging spread———Spread of the next purchase<br>Unrealized——————Unrealized P&amp;L<br>Long PNL——————-P&amp;L purchases<br>Short PNL——————-P&amp;L sales<br>Calculated——————Calculated P&amp;L<br>Close profit—————-Profit to start Trailings<br>Ping—————————Connection speed to the exchange<br>USDT balance————The overall balance of a futures account<br>Available——————Available for withdrawal<br>Margin balance———The available balance margin<br>BNB balance————Balance BNB</p>
-<!-- /wp:paragraph -->
-
-<!-- wp:image {"id":44,"sizeSlug":"large"} -->
-<figure class="wp-block-image size-large"><img src="https://boomtrader.info/wp-content/uploads/2020/08/3.png" alt="" class="wp-image-44"/><figcaption>TELEGRAM</figcaption></figure>
-<!-- /wp:image -->
-
-<!-- wp:paragraph -->
-<p>In this tab, we configure the Telegram bot for notifications.</p>
+<p>  Deposit amount (if the Deposit is small, the allocated share may not be enough for a minimum purchase, exclude all expensive futures) with a Deposit of $ 300, you can trade all contracts.</p>
 <!-- /wp:paragraph -->
 
 <!-- wp:paragraph -->
-<p>In Telegram, log in to the @crierbot bot and send / run it in response, get the API key to connect.</p>
-<!-- /wp:paragraph -->
-
-<!-- wp:image {"id":45,"sizeSlug":"large"} -->
-<figure class="wp-block-image size-large"><img src="https://boomtrader.info/wp-content/uploads/2020/08/5.png" alt="" class="wp-image-45"/><figcaption>LOGIN</figcaption></figure>
-<!-- /wp:image -->
-
-<!-- wp:paragraph -->
-<p>In this tab, you must specify:</p>
+<p>  With a$ 30 Deposit, exclude the 20 most expensive contracts.</p>
 <!-- /wp:paragraph -->
 
 <!-- wp:paragraph -->
-<p>License<br>Key API<br>Secret API</p>
+<p>  Also consider the Funding fee on some Altos, it is very high and a long cycle will eat up the Deposit, for example, YFII Funding fee per day ~1.5% of the contract volume, and holding such a position for 3 days will reduce the profit from this cycle to ~0</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:paragraph -->
+<p>Distribute futures contracts evenly across 3 bots. <span class="has-inline-color has-luminous-vivid-orange-color"><strong>!!!NO MORE THAN 25 CONTRACTS!!!</strong></span></p>
+<!-- /wp:paragraph -->
+
+<!-- wp:paragraph -->
+<p>For smooth operation of the bot, we recommend using the <a href="https://aws.amazon.com/ru/">AMAZON</a> remote desktop, choose London from locations, ping 1ms.</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:paragraph -->
+<p>Learn more about <a href="/settings.html">settings</a>.</p>
 <!-- /wp:paragraph -->
 
 <!-- wp:heading -->
-<h2><strong><span class="has-inline-color has-luminous-vivid-orange-color">!!! change the settings when the bot is not in position, after changing the settings, be sure to reset the coefficient !!!</span></strong></h2>
+<h2><span class="has-inline-color has-luminous-vivid-orange-color">!!!INSTRUMENTS SHOULD NOT BE REPEATED, THIS WILL LEAD TO INCORRECT P&amp;L CALCULATIONS !!!</span></h2>
 <!-- /wp:heading -->
 
-</body>
-</html>
+<!-- wp:paragraph -->
+<p></p>
+<!-- /wp:paragraph -->{:}{:ru}<!-- wp:heading -->
+<h2>СОЗДАЙТЕ API KEY И SECRET KEY </h2>
+<!-- /wp:heading -->
+
+<!-- wp:quote -->
+<blockquote class="wp-block-quote"><p>СКАЧАЙТЕ ПОСЛЕДНЮЮ ВЕРСИЮ BOOM_TRADER <a href="tg://resolve?domain=boomtraderchat">TELEGRAM</a> .</p></blockquote>
+<!-- /wp:quote -->
+
+<!-- wp:paragraph -->
+<p>НЕОБХОДИМО УСТАНОВИТЬ. <a href="https://dotnet.microsoft.com/download/dotnet-core/current/runtime">NET Core 3.1 runtime</a></p>
+<!-- /wp:paragraph -->
+
+<!-- wp:paragraph -->
+<p>1. Создайте папку на рабочем столе «торговый робот-1» (имя папки может быть любым ), распакуйте архив в созданную папку.</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:paragraph -->
+<p>2. Перейдите в папку «торговый робот-1» и запустите файл «BoomTrader_2.exe»</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:paragraph -->
+<p>3. В разделе «подключения». введите полученный ключ в поле «лицензионный ключ», в поля API key и Sekret API, полученные ключи на binance, и нажмите кнопку «Подключиться». в окне «журналы» появится сообщение об успешной проверке лицензии.</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:paragraph -->
+<p>4. Закройте, открытый торговый робот.</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:paragraph -->
+<p>5. Создайте на рабочем столе еще 2 папки "торговый робот-2", "торговый робот-3". Скопируйте все файлы из папки "торговый робот 1" в папку "торговый робот-2", "торговый робот-3".</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:quote -->
+<blockquote class="wp-block-quote"><p>Запустите все 3 версии торгового робота и подключитесь к бирже.</p></blockquote>
+<!-- /wp:quote -->
+
+<!-- wp:image {"align":"center","id":52,"sizeSlug":"large"} -->
+<div class="wp-block-image"><figure class="aligncenter size-large"><img src="/img/4.png" alt="" class="wp-image-52"/></figure></div>
+<!-- /wp:image -->
+
+<!-- wp:paragraph -->
+<p>При выборе контрактов учитывайте:</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:paragraph -->
+<p>  Сумма депозита (если депозит небольшой, то выделенной доли может не хватить на минимальную покупку, исключите все дорогие фьючерсы) с депозитом в 300 USDT можно торговать всеми контрактами.</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:paragraph -->
+<p>  С депозитом в 30 USDT исключите 20 самых дорогих контрактов.</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:paragraph -->
+<p>  Также учитывайте комиссию за финансирование на некоторых Альтах, она очень высока и длительный цикл съест депозит, например, комиссия за финансирование YFII в день ~1,5% от объема контракта, а удержание такой позиции в течение 3 дней снизит прибыль от этого цикла до ~0</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:paragraph -->
+<p>Распределите фьючерсные контракты равномерно по 3 ботам.               <strong><span class="has-inline-color has-luminous-vivid-orange-color">!!!МАКСИМУМ 25 КОНТРАКТОВ НА КАЖДОГО БОТА!!!</span></strong></p>
+<!-- /wp:paragraph -->
+
+<!-- wp:paragraph -->
+<p>Для бесперебойной работы бота мы рекомендуем использовать удаленный рабочий стол <a href="https://aws.amazon.com/ru/">AMAZON</a>, выбрать Лондон, ping 1ms.</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:paragraph -->
+<p>больше о <a href="/settings.html">настройках</a>.</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:heading -->
+<h2><span class="has-inline-color has-luminous-vivid-orange-color">!!! ИНСТРУМЕНТЫ НЕ ДОЛЖНЫ ПОВТОРЯТЬСЯ, ЭТО ПРИВЕДЕТ К НЕПРАВИЛЬНЫМ РАСЧЕТАМ P&L !!!</span></h2>
+<!-- /wp:heading -->
+
+<!-- wp:paragraph -->
+<p></p>
+<!-- /wp:paragraph -->{:}
